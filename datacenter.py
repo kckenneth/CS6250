@@ -60,6 +60,7 @@ class DataCenter(Topo):
         #NOTE: You MUST label hosts as h1x1x1, h1x1x2, ... hfixfixn     
         #HINT: Use a loop to construct the topology in pieces. Don't forget the link configuration.
 
+        # This is my code as at 2018 08 25 by Kenneth
         for i in range(1, fi+1):
             mls = 'mls{}'.format(i)
             mls = self.addSwitch(mls)
